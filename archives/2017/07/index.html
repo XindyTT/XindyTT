@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 
 
 
@@ -10,13 +10,6 @@
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-<meta name="theme-color" content="#222">
-
-
-
-
-
-
 
 
 
@@ -75,7 +68,7 @@
 
 <link href="/XindyTT/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
 
-<link href="/XindyTT/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
+<link href="/XindyTT/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
   <meta name="keywords" content="Hexo, NexT" />
@@ -87,7 +80,7 @@
 
 
 
-  <link rel="shortcut icon" type="image/x-icon" href="/XindyTT/favicon.ico?v=5.1.2" />
+  <link rel="shortcut icon" type="image/x-icon" href="/XindyTT/favicon.ico?v=5.1.0" />
 
 
 
@@ -108,9 +101,8 @@
   var CONFIG = {
     root: '/XindyTT/',
     scheme: 'Muse',
-    sidebar: {"position":"left","display":"post","offset":12,"offset_float":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
     fancybox: true,
-    tabs: true,
     motion: true,
     duoshuo: {
       userId: '0',
@@ -134,7 +126,11 @@
 
 
 
-  <title>Archiv | Hexo</title>
+  <title> Archiv | Hexo </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="">
+
   
 
 
@@ -149,17 +145,13 @@
 
 
 
-
-</head>
-
-<body itemscope itemtype="http://schema.org/WebPage" lang="">
 
   
   
     
   
 
-  <div class="container sidebar-position-left  page-archive  ">
+  <div class="container one-collumn sidebar-position-left  page-archive  ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -206,7 +198,7 @@
       
         
         <li class="menu-item menu-item-archives">
-          <a href="/XindyTT/archives/" rel="section">
+          <a href="/XindyTT/archives" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
@@ -216,7 +208,7 @@
       
         
         <li class="menu-item menu-item-tags">
-          <a href="/XindyTT/tags/" rel="section">
+          <a href="/XindyTT/tags" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
             
@@ -243,42 +235,38 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block archive">
-    <div id="posts" class="posts-collapse">
-      <span class="archive-move-on"></span>
+  <section id="posts" class="posts-collapse">
+    <span class="archive-move-on"></span>
 
-      <span class="archive-page-counter">
+    <span class="archive-page-counter">
+      
+      
+      
         
-        
-        
-          
-        
-        Öhm..! Ein Artikel. Bleib dran.
-      </span>
+      
+      Öhm..! Ein Artikel. Bleib dran.
+    </span>
+
+    
 
       
+      
+      
 
+      
         
-        
-        
+        <div class="collection-title">
+          <h2 class="archive-year motion-element" id="archive-year-2017">2017</h2>
+        </div>
+      
+      
 
-        
-          
-          <div class="collection-title">
-            <h2 class="archive-year motion-element" id="archive-year-2017">2017</h2>
-          </div>
-        
-        
-
-        
+      
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
 
-      <h2 class="post-title">
+      <h1 class="post-title">
         
             <a class="post-title-link" href="/XindyTT/2017/07/27/hello-world/" itemprop="url">
               
@@ -286,7 +274,7 @@
               
             </a>
         
-      </h2>
+      </h1>
 
       <div class="post-meta">
         <time class="post-time" itemprop="dateCreated"
@@ -301,18 +289,14 @@
 
 
 
-      
+    
 
-    </div>
-  </div>
-  
-  
-  
+  </section>
 
   
 
 
-
+          
           </div>
           
 
@@ -332,7 +316,6 @@
   </div>
 
   <aside id="sidebar" class="sidebar">
-    
     <div class="sidebar-inner">
 
       
@@ -350,10 +333,10 @@
           
         </div>
         <nav class="site-state motion-element">
-
+        
           
             <div class="site-state-item site-state-posts">
-              <a href="/XindyTT/archives/">
+              <a href="/XindyTT/archives">
                 <span class="site-state-item-count">1</span>
                 <span class="site-state-item-name">Artikel</span>
               </a>
@@ -432,7 +415,7 @@
         
       </div>
     
-
+    
   </div>
 
   
@@ -452,14 +435,6 @@
 
 
   
-
-
-
-
-
-
-
-
 
 
 
@@ -486,9 +461,9 @@
   
 
 
-  <script type="text/javascript" src="/XindyTT/js/src/utils.js?v=5.1.2"></script>
+  <script type="text/javascript" src="/XindyTT/js/src/utils.js?v=5.1.0"></script>
 
-  <script type="text/javascript" src="/XindyTT/js/src/motion.js?v=5.1.2"></script>
+  <script type="text/javascript" src="/XindyTT/js/src/motion.js?v=5.1.0"></script>
 
 
 
@@ -506,11 +481,12 @@
   
 
 
-  <script type="text/javascript" src="/XindyTT/js/src/bootstrap.js?v=5.1.2"></script>
+  <script type="text/javascript" src="/XindyTT/js/src/bootstrap.js?v=5.1.0"></script>
 
 
 
   
+
 
 
   
@@ -536,15 +512,11 @@
 
 
 
-
   
 
 
 
-
-
   
-
   
 
   
@@ -552,6 +524,9 @@
   
 
   
+
+  
+
 
   
 
