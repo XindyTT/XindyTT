@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 
 
 
@@ -10,11 +10,19 @@
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
 
 
 
 <meta http-equiv="Cache-Control" content="no-transform" />
 <meta http-equiv="Cache-Control" content="no-siteapp" />
+
 
 
 
@@ -68,7 +76,7 @@
 
 <link href="/XindyTT/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
 
-<link href="/XindyTT/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
+<link href="/XindyTT/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
 
 
   <meta name="keywords" content="Hexo, NexT" />
@@ -80,7 +88,7 @@
 
 
 
-  <link rel="shortcut icon" type="image/x-icon" href="/XindyTT/favicon.ico?v=5.1.0" />
+  <link rel="shortcut icon" type="image/x-icon" href="/XindyTT/favicon.ico?v=5.1.2" />
 
 
 
@@ -101,9 +109,11 @@
   var CONFIG = {
     root: '/XindyTT/',
     scheme: 'Muse',
-    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
+    version: '5.1.2',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":12,"b2t":false,"scrollpercent":false,"onmobile":false},
     fancybox: true,
-    motion: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn"}},
     duoshuo: {
       userId: '0',
       author: 'Author'
@@ -126,11 +136,7 @@
 
 
 
-  <title> Archiv | Hexo </title>
-</head>
-
-<body itemscope itemtype="http://schema.org/WebPage" lang="">
-
+  <title>Archiv | Hexo</title>
   
 
 
@@ -140,18 +146,16 @@
 
 
 
+</head>
 
-
-
-
-
+<body itemscope itemtype="http://schema.org/WebPage" lang="">
 
   
   
     
   
 
-  <div class="container one-collumn sidebar-position-left  page-archive  ">
+  <div class="container sidebar-position-left page-archive">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -196,26 +200,6 @@
           </a>
         </li>
       
-        
-        <li class="menu-item menu-item-archives">
-          <a href="/XindyTT/archives" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
-            
-            Archiv
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-tags">
-          <a href="/XindyTT/tags" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
-            
-            Tags
-          </a>
-        </li>
-      
 
       
     </ul>
@@ -235,38 +219,42 @@
           <div id="content" class="content">
             
 
-  <section id="posts" class="posts-collapse">
-    <span class="archive-move-on"></span>
+  
+  
+  
+  <div class="post-block archive">
+    <div id="posts" class="posts-collapse">
+      <span class="archive-move-on"></span>
 
-    <span class="archive-page-counter">
-      
-      
-      
+      <span class="archive-page-counter">
         
-      
-      Öhm..! Ein Artikel. Bleib dran.
-    </span>
-
-    
-
-      
-      
-      
-
-      
         
-        <div class="collection-title">
-          <h2 class="archive-year motion-element" id="archive-year-2017">2017</h2>
-        </div>
-      
-      
+        
+          
+        
+        Öhm..! Ein Artikel. Bleib dran.
+      </span>
 
       
+
+        
+        
+        
+
+        
+          
+          <div class="collection-title">
+            <h1 class="archive-year" id="archive-year-2017">2017</h1>
+          </div>
+        
+        
+
+        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
 
-      <h1 class="post-title">
+      <h2 class="post-title">
         
             <a class="post-title-link" href="/XindyTT/2017/07/27/hello-world/" itemprop="url">
               
@@ -274,7 +262,7 @@
               
             </a>
         
-      </h1>
+      </h2>
 
       <div class="post-meta">
         <time class="post-time" itemprop="dateCreated"
@@ -289,14 +277,18 @@
 
 
 
-    
+      
 
-  </section>
+    </div>
+  </div>
+  
+  
+  
 
   
 
 
-          
+
           </div>
           
 
@@ -316,6 +308,7 @@
   </div>
 
   <aside id="sidebar" class="sidebar">
+    
     <div class="sidebar-inner">
 
       
@@ -324,19 +317,18 @@
 
       <section class="site-overview sidebar-panel sidebar-panel-active">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-          <img class="site-author-image" itemprop="image"
-               src="/XindyTT/images/avatar.gif"
-               alt="Xindy" />
-          <p class="site-author-name" itemprop="name">Xindy</p>
-           
-              <p class="site-description motion-element" itemprop="description"></p>
           
+            <p class="site-author-name" itemprop="name">Xindy</p>
+            <p class="site-description motion-element" itemprop="description"></p>
         </div>
+
         <nav class="site-state motion-element">
-        
+
           
             <div class="site-state-item site-state-posts">
+            
               <a href="/XindyTT/archives">
+            
                 <span class="site-state-item-count">1</span>
                 <span class="site-state-item-name">Artikel</span>
               </a>
@@ -388,22 +380,25 @@
     <i class="fa fa-heart"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">Xindy</span>
+
+  
 </div>
 
 
-<div class="powered-by">
-  Erstellt mit  <a class="theme-link" href="https://hexo.io">Hexo</a>
-</div>
+  <div class="powered-by">Erstellt mit  <a class="theme-link" href="https://hexo.io">Hexo</a></div>
 
-<div class="theme-info">
-  Theme -
-  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
-    NexT.Muse
-  </a>
-</div>
+  <span class="post-meta-divider">|</span>
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.2</div>
 
 
         
+
+
+
+
+
+
 
         
       </div>
@@ -415,7 +410,7 @@
         
       </div>
     
-    
+
   </div>
 
   
@@ -435,6 +430,14 @@
 
 
   
+
+
+
+
+
+
+
+
 
 
 
@@ -461,32 +464,29 @@
   
 
 
-  <script type="text/javascript" src="/XindyTT/js/src/utils.js?v=5.1.0"></script>
+  <script type="text/javascript" src="/XindyTT/js/src/utils.js?v=5.1.2"></script>
 
-  <script type="text/javascript" src="/XindyTT/js/src/motion.js?v=5.1.0"></script>
-
-
-
-  
-  
-
-  
-  
-    <script type="text/javascript" id="motion.page.archive">
-      $('.archive-year').velocity('transition.slideLeftIn');
-    </script>
-  
-
-
-  
-
-
-  <script type="text/javascript" src="/XindyTT/js/src/bootstrap.js?v=5.1.0"></script>
+  <script type="text/javascript" src="/XindyTT/js/src/motion.js?v=5.1.2"></script>
 
 
 
   
+  
 
+  <script type="text/javascript" src="/XindyTT/js/src/scrollspy.js?v=5.1.2"></script>
+<script type="text/javascript" src="/XindyTT/js/src/post-details.js?v=5.1.2"></script>
+
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/XindyTT/js/src/bootstrap.js?v=5.1.2"></script>
+
+
+
+  
 
 
   
@@ -512,12 +512,14 @@
 
 
 
-  
 
 
 
   
-  
+
+
+
+
 
   
 
@@ -527,6 +529,7 @@
 
   
 
+  
 
   
 
